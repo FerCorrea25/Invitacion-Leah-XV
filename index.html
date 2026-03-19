@@ -128,7 +128,7 @@
                 <h4 class="text-md font-bold text-white tracking-[0.1em] uppercase">Las Anastacias Premier</h4>
                 <p class="text-[10px] text-white/70 mt-2 font-light">Lindero Durazno 100, 42083<br>Acayuca, Hgo.</p>
             </div>
-            <a href="http://googleusercontent.com/maps.google.com/6" target="_blank" class="text-[9px] font-bold text-cyan-400 uppercase tracking-widest underline underline-offset-4 block">Abrir en GPS</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Las+Anastacias+Premier+Acayuca&query_place_id=ChIJd3gs8Jeh0YURWq66KVUwqn8" target="_blank" class="text-[9px] font-bold text-cyan-400 uppercase tracking-widest underline underline-offset-4 block">Abrir en GPS</a>
         </div>
 
         <div class="glass-pink p-8 border-b-2 border-pink-500/30">
@@ -185,8 +185,9 @@
                             </select>
                         </div>
                     </div>
+                     <textarea id="magicGreeting" rows="2" placeholder="Dedicame un mensaje..." class="w-full bg-black/40 border border-white/5 rounded-xl p-3 text-[11px] text-gray-300 focus:outline-none italic mt-4"></textarea>
                 </div>
-                <button onclick="sendRSVP()" class="w-full max-w-xs py-4 rounded-xl bg-gradient-to-r from-pink-600 to-cyan-600 font-bold uppercase text-[10px] text-white tracking-widest shadow-lg shadow-pink-500/20 active:scale-95 transition-all duration-150">CONFIRMAR ASISTENCIA ✨</button>
+                <button onclick="sendRSVP()" class="w-full max-w-xs py-4 rounded-xl bg-gradient-to-r from-pink-600 to-red-600 font-bold uppercase text-[10px] text-white tracking-widest shadow-lg shadow-pink-500/20 active:scale-95 transition-all duration-150">Claro que estare ahi para brillar!! ✨</button>
             </div>
         </div>
     </section>
@@ -208,7 +209,7 @@
             setTimeout(() => { overlay.style.display = 'none'; }, 1000);
         }
 
-        const targetDate = new Date("April 11, 2026 19:00:00").getTime();
+        const targetDate = new Date("April 11, 2026 18:00:00").getTime();
         function updateCountdown() {
             const now = new Date().getTime();
             const d = targetDate - now;
