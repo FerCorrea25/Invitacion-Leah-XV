@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mis XV - Leah | Glow Fest AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&family=Syncopate:wght@400;1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --neon-pink: #ff007f;
@@ -18,9 +18,9 @@
             color: white;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: -10;
+            padding: 0;
             -webkit-font-smoothing: antialiased;
-            overflow-x: visible;
+            overflow-x: hidden;
         }
 
         body::before {
@@ -50,8 +50,10 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shimmer 4s linear infinite;
-            filter: drop-shadow(0 0 8px var(--neon-pink));
+            filter: drop-shadow(0 0 12px var(--neon-pink));
             display: inline-block;
+            /* Padding lateral para evitar que el brillo se corte */
+            padding: 0 25px;
         }
 
         .glass-pink {
